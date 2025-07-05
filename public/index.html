@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptarithm Solver</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/8554/8554009.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="sm.css" media="(max-width:500px)" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="dark-toggle">
+      <img
+        src="https://www.sharyap.com/_next/image?url=%2Fimages%2Fdark_mode_light.webp&w=48&q=75"
+        alt=""
+        onclick="darkMode()"
+        id="to-dark"
+      />
+      <img
+        src="https://www.sharyap.com/_next/image?url=%2Fimages%2Fdark_mode_dark.webp&w=48&q=75"
+        alt=""
+        onclick="darkMode()"
+        id="to-light"
+      />
+    </div>
+    <header class="header">
+      <h1>
+        Cryptarithm Solver <br /><span class="creator">by Lesharo B. S.</span>
+      </h1>
+    </header>
+
+    <div class="num-input">
+      <h3>Silahkan tulis soal cryptarithm disini</h3>
+      <input
+        type="text"
+        id="operand1"
+        autocomplete="off"
+        placeholder="HURUF"
+      /><br />
+      <input
+        type="text"
+        id="operand2"
+        autocomplete="off"
+        placeholder="HURUF"
+      /><br />
+      <div class="operator-symbol">
+        <div class="line"></div>
+        <div class="plus">+</div>
+      </div>
+      <input
+        type="text"
+        id="result"
+        autocomplete="off"
+        placeholder="HASIL"
+      /><br />
+
+      <div class="option">
+        <div class="allow-leading">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <h4>Allow leading zero</h4>
+        </div>
+        <button id="solve-button" onclick="solveCryptarithm()">Solve</button>
+      </div>
+    </div>
+
+    <div class="num-output"></div>
+
+    <footer class="footer">
+      <div class="name">Lesharo B. S.</div>
+      <div class="contact">
+        <a href="https://www.instagram.com/lesharobs_/">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="http://discord.gg/lesbs">
+          <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://github.com/leshbs">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="copyright">© 2025 Lesharo B.S. All Rights Reserved.</div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

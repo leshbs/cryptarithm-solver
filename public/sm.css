@@ -1,0 +1,37 @@
+header {
+    margin-top: 60px;
+}
+#to-dark {
+    filter: brightness(500%) contrast(150%);
+    border-radius: 25px;
+    background-color: rgb(44, 29, 0);
+}
+#to-light {
+    background-color: orange;
+    border-radius: 25px;
+}
+.num-input .line {
+    width: 270px;
+}
+.num-input .operator-symbol {
+    width: 310px;
+    left: 5px;
+}
+.operand1, .operand2, .result {
+    width: 280px;
+}
+.num-output .operator-symbol {
+    width: 280px;
+    bottom: 7px;
+}
+.mapping {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+#more-btn {
+    font-size: 1.5em;
+    margin: 0 20px;
+}
+.copyright {
+    font-size: 0.9em;
+}
